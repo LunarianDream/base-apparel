@@ -51,8 +51,13 @@ p {
 }
 
 form {
-    position: relative;
     width: 80%;
+}
+
+form > div {
+    margin-bottom: .5em;
+    position: relative;
+
 }
 input {
     border: 1px solid gainsboro;
@@ -74,4 +79,11 @@ button {
     height: 100%;
     position: absolute;
     right: 0;
+}
+
+small {
+    display: none;
+    font-size: .8em;
+    color: var(--softRed);
+    margin-left: 2em;
 }
