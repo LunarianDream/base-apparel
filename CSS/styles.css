@@ -51,6 +51,7 @@ p {
 }
 
 form {
+    max-width: 400px;
     width: 80%;
 }
 
@@ -59,6 +60,7 @@ form > div {
     position: relative;
 
 }
+
 input {
     border: 1px solid gainsboro;
     border-radius: 2em;
@@ -68,6 +70,12 @@ input {
 
 input::placeholder {
     color: var(--desaturatedRed);
+}
+
+.error_icon {
+    position: absolute;
+    top: .6em;
+    right: 6em;
 }
 
 button {
@@ -81,9 +89,47 @@ button {
     right: 0;
 }
 
+button:hover {
+    background-image: var(--gradient1);
+}
+
 small {
     display: none;
     font-size: .8em;
     color: var(--softRed);
     margin-left: 2em;
+}
+
+@media only screen and (min-width: 1080px) {
+
+    article {
+        background-image: url('../Images/bg-pattern-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 3.5em;
+    }
+
+    h1, p {
+        text-align: left;
+        padding: 0;
+    }
+
+    .logo {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+
+    .logo, h1, p, form {
+        margin-inline: auto;
+        width: 45%;
+
+    }
+
+    button{
+        padding-inline: 2.5em;
+    }
 }

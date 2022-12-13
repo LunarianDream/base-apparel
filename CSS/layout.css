@@ -4,3 +4,44 @@ main {
     flex-wrap: nowrap;
     align-items: center;
 }
+
+.logo {
+    display: none;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 1080px) {
+
+    header {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    picture {
+        height: 100vh;
+        order: 2;
+        width: 45%;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
+    }
+
+    .logo {
+        display: block;
+    }
+}

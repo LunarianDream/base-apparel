@@ -18,6 +18,8 @@ $(document).ready(function() {
             $('.error').hide();
 
         }
+
+        console.log(isValid);
     };
 
     $('.form_submit').click(mailingValidation);
