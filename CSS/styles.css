@@ -125,7 +125,8 @@ small {
 
     .logo, h1, p, form {
         margin-inline: auto;
-        width: 45%;
+        max-width: 435px;
+        width: 47%;
 
     }
 
