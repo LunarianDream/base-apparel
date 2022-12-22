@@ -33,6 +33,11 @@ article {
         order: 2;
     }
 
+    picture img {
+        height: 100%;
+        object-fit: cover;
+    }
+
     article {
         display: flex;
         flex-direction: column;
