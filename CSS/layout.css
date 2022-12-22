@@ -24,21 +24,20 @@ article {
     main {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        justify-items: start;
+        align-items: start;
     }
 
     picture {
-        height: 100vh;
+        height: 100%;
         order: 2;
-        width: 45%;
     }
 
     article {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 55%;
+        width: 60%;
     }
 
     .logo {

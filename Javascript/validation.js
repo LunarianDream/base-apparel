@@ -6,8 +6,10 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    const regex = /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+
     let mailingValidation = function () {
-        if ($('#email').val() == '') {
+        if ($('#email').val() == '' || regex.test($('#email').val()) == false ) {
             $('#email').css('border-color', 'var(--softRed)');
             $('.error').show();
             $('.error').text(`Please provide a valid email`);
